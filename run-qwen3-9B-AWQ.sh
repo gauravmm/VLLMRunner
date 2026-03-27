@@ -1,11 +1,12 @@
 #!/bin/sh
 
-uv run vllm serve QuantTrio/Qwen3-VL-30B-A3B-Thinking-AWQ \
+uv run vllm serve cyankiwi/Qwen3.5-9B-AWQ-4bit \
   --trust-remote-code \
-  --max-model-len 24000 \
+  --max-model-len 131072 \
   --gpu-memory-utilization 0.95 \
-  --served-model-name qwen3-vl-moe \
+  --served-model-name qwen3.5-9b-awq \
+  --kv-cache-dtype fp8 \
   --enable-auto-tool-choice \
-  --tool-call-parser hermes \
+  --tool-call-parser qwen3_xml \
   --reasoning-parser qwen3 \
   --enable-log-requests --enable-log-outputs
