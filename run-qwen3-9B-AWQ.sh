@@ -1,6 +1,6 @@
 #!/bin/sh
 
-uv run vllm serve cyankiwi/Qwen3.5-9B-AWQ-4bit \
+uv run vllm serve cyankiwi/Qwen3.5-9B-AWQ-BF16-INT4 \
   --trust-remote-code \
   --max-model-len 131072 \
   --gpu-memory-utilization 0.95 \

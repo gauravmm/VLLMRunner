@@ -5,8 +5,16 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = "==3.13.*"
 dependencies = [
-    "transformers",
+    "transformers[torch]==5.5.0",
+    "vllm>=0.19.1rc1.dev2",
 ]
 
 [tool.uv.sources]
-transformers = { git = "https://github.com/huggingface/transformers.git" }
+
+[[tool.uv.index]]
+url = "https://wheels.vllm.ai/nightly"
+
+[tool.uv]
+override-dependencies = [
+    "transformers==5.5.0"
+]
