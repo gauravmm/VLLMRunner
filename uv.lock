@@ -2835,7 +2835,7 @@ wheels = [
 
 [[package]]
 name = "vllm"
-version = "0.20.1rc1.dev159+ge6ff3e9c8"
+version = "0.20.2rc1.dev9+g01d4d1ad3"
 source = { registry = "https://wheels.vllm.ai/nightly" }
 dependencies = [
     { name = "aiohttp" },
@@ -2908,8 +2908,8 @@ dependencies = [
     { name = "xgrammar", marker = "platform_machine == 'aarch64' or platform_machine == 'arm64' or platform_machine == 'ppc64le' or platform_machine == 's390x' or platform_machine == 'x86_64'" },
 ]
 wheels = [
-    { url = "https://wheels.vllm.ai/e6ff3e9c83a6520c3793f4e0511ac8591a07c243/vllm-0.20.1rc1.dev159%2Bge6ff3e9c8-cp38-abi3-manylinux_2_24_aarch64.whl" },
-    { url = "https://wheels.vllm.ai/e6ff3e9c83a6520c3793f4e0511ac8591a07c243/vllm-0.20.1rc1.dev159%2Bge6ff3e9c8-cp38-abi3-manylinux_2_24_x86_64.whl" },
+    { url = "https://wheels.vllm.ai/01d4d1ad375dc5854779c593eee093bcebb0cada/vllm-0.20.2rc1.dev9%2Bg01d4d1ad3-cp38-abi3-manylinux_2_24_aarch64.whl" },
+    { url = "https://wheels.vllm.ai/01d4d1ad375dc5854779c593eee093bcebb0cada/vllm-0.20.2rc1.dev9%2Bg01d4d1ad3-cp38-abi3-manylinux_2_24_x86_64.whl" },
 ]
 
 [[package]]
